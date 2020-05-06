@@ -1,0 +1,345 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+}
+
+.cabeza{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin-top: 100px;
+	margin-bottom: 130px;
+	z-index: 62;
+}
+
+.cabeza #banner {
+	display: block;
+	margin: 0px;
+}
+
+/*menú*/
+
+.menu{
+	background-color: black;
+	margin: 0 auto;
+	position: fixed;
+	right: 0;
+    left: 0;
+	top:0;
+	margin-right: auto;
+    margin-left: auto;
+	z-index: 100;
+}
+.encabezado #logo{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 62;
+	margin-block-end: 0;
+    margin-block-start: 0;
+	bottom: 0;
+}
+
+.encabezado #logo img{
+	height: 85%
+}
+.encabezado #navegacion ul{
+	list-style: none;
+	text-align: center;
+	padding-bottom: 25px;
+	padding-left: 150px;
+	margin: 0;
+
+}
+.encabezado #navegacion ul li{
+	display: inline-block;
+	width: 130px;
+	padding-top: 20px;
+	position: relative;
+}
+.encabezado #navegacion ul li a{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+	display: block;
+	padding: 10px 10px;
+	text-decoration: none;	
+} 
+.encabezado #navegacion ul li a:hover{
+	color: #d0880c;
+	text-shadow: 2px 2px 2px 2px;
+}
+.encabezado #reserva {
+	position: relative;
+	background-color: #115506;
+	margin-top: 10px;
+}
+
+.actividades #senderismo{
+	position: relative;
+	text-align: left;
+	padding: 10px 0;
+	margin-top: -5px;
+}
+
+.titulo #sendero{
+	position: relative;
+	text-align: right;
+	margin-right: 210px;
+}
+
+.actividades #senderismo p{
+	float: right;
+	font-size: 26px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-align: justify;
+	margin-left: 5px;
+	padding-left: 40px;
+	margin-top: 60px;
+	margin-right: 60px;
+	width: 50%;
+}
+
+.actividades #caminar img{
+	float: left;
+	margin-left: 40px;
+	width: 40%;
+	margin-top: -500px;
+}
+
+.actividades #cabalgata{
+   position:relative;
+	text-align: left;
+	color: white;
+	background-color: #115506;
+	height: 570px;
+	margin-top: 400px;
+	
+}
+
+.titulo #cabalgar{ 
+	position: relative;
+	text-align: left;
+	top: 80px;
+	margin-left: 210px;
+}
+
+.actividades #cabalgata p{
+	float: left;
+	margin-right: 70px;
+	font-size: 26px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-align: justify;
+	padding-left: 65px;
+	margin-top: 100px;
+	width: 50%;
+}
+
+.actividades #caballo img{
+	float: right;
+	margin-right: 26px;
+	width: 40%;
+	margin-top: -370px;
+	
+
+}
+
+.actividades #ciclismo{
+    position:relative;
+	text-align: left;
+	margin-top: 60px;
+	background-color:white;
+	height: 570px;
+	
+}
+
+.titulo #bici{ 
+	position: relative;
+	text-align: right;
+	top: 60px;
+	margin-right: 210px;
+}
+
+.actividades #ciclismo p{
+	float: right;
+	margin-right: 70px;
+	font-size: 26px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-align: justify;
+	margin-top: 110px;
+	width: 50%;
+	color:black;
+}
+
+.actividades #cicli img{
+	float: left;
+	margin-left: 32px;
+	width: 40%;
+	margin-top: -115px;
+}
+
+.actividades #yoga{
+	position:absolute;
+	color: white;
+	background-color: #115506;
+	height: 570px;
+	margin-top: 80px;
+
+}
+
+.titulo #yo{ 
+	position: relative;
+	text-align: left;
+	top: 10px;
+	margin-left: 210px;
+}
+
+.actividades #yoga p{
+	float: left;
+	font-size: 24px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-align: justify;
+	padding-left: 65px;
+	width: 50%;
+}
+
+.actividades #yog img{
+	float: right;
+	margin-right: 26px;
+	width: 40%;
+	margin-top: -140px;
+}
+
+.actividades #spa{
+	text-align: left;
+	padding: 10px 0;
+	margin-top: 700px;
+	background-color:white;
+	height: 570px;
+}
+
+.titulo #relax{ 
+	position: relative;
+	text-align: left;
+	top: 120px;
+	margin-left: 850px;
+}
+
+.actividades #spa p{
+	float: right;
+	margin-right: 60px;
+	font-size: 26px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-align: justify;
+	margin-top: 180px;
+	width: 50%;
+	color:black;
+}
+
+.actividades #spa img{
+	float: left;
+	margin-left: 40px;
+	width: 40%;
+	margin-top: -40px;
+}
+
+.actividades #pesca{
+	position:absolute;
+	color: white;
+	background-color: #115506;
+	height: 550px;
+	margin-top: 80px;
+
+}
+
+.titulo #pez{ 
+	position: relative;
+	text-align: left;
+	top: 130px;
+	margin-right: 850px;
+}
+
+.actividades #pesca p{
+	float: left;
+	font-size: 24px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-align: justify;
+	padding-left: 65px;
+	width: 50%;
+	margin-top: 200px;
+}
+
+.actividades #pesca img{
+	float: right;
+	margin-right: 26px;
+	margin-top: -40px;
+	width: 40%;
+}
+
+/*footer*/
+footer{
+	margin-top: 670px;
+	background-color:black;
+	color: white;
+	height: 250px;
+}
+
+Footer h5 {
+	font-size: 18px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	padding-left: 40px;
+	position: relative;
+	top: 200px;
+	height: 0;
+}
+
+footer h4{
+	font-size: 20px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-align: center;
+}
+
+footer #facebook{
+	position: relative;
+	margin-left: 550px;
+	height: 0;
+}
+
+footer #insta{
+	position: relative;
+	display: block;
+	margin-left: 660px;
+	top: -14px;
+	height: 0;
+	
+}
+
+footer #twitter{
+	position: relative;
+	margin-left: 770px;
+	top: -22px;
+	height: 0;
+}
+
+footer h6{
+	position: relative;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 18px;
+	top: 15px;
+	height: 0;
+}
+footer h3{
+	font-size: 18px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	padding-left: 1060px;
+	position: relative;
+	top: -5px;
+	height: 0;
+	 
+}

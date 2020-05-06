@@ -1,0 +1,376 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0;
+}
+.cabeza{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin-top: 100px;
+	margin-bottom: 130px;
+	z-index: 62;
+}
+
+.cabeza #banner {
+	display: block;
+	margin: 0px;
+}
+/*Menu*/
+.menu{
+	background-color: black;
+	margin: 0 auto;
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	margin-right: auto;
+	margin-left: auto;
+	z-index: 100;
+}
+
+.encabezado #logo{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 62;
+	margin-block-end: 0;
+	margin-block-stard: 0;
+	bottom: 0;
+}
+.encabezado #logo img{
+	height: 85%
+}
+
+.encabezado #navegacion ul{
+	list-style: none;
+	text-align: center;
+	padding-bottom: 25px;
+	padding-left: 150px;
+	margin: 0
+}
+
+.encabezado #navegacion ul li{
+	display: inline-block;
+	width: 380px;
+	padding-top: 40px;
+	position: relative;
+}
+
+.encabezado #navegacion ul li a{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+	display: block;
+	padding: 10px 10px;
+	text-decoration: none;
+}
+
+.encabezado #navegacion ul li a:hover{
+	color: #d0880c;
+	text-shadow: 2px 2px 2px 2px;
+}
+/*descripcion*/
+.titulo{
+	position: relative;
+	top: -68px;
+}
+.titulo #arbol{
+	position: relative;
+	text-align: center;
+}
+
+.descripcion {
+	float: left;
+	width: 50%;
+}
+.descripcion p{
+	font-size: 26px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-align: justify;
+	margin-left: 5px;
+	padding-left: 40px;
+	margin-top: 0px;
+}
+
+.contacto{
+	float: right;
+	width: 41%;
+	margin-right: 40px;
+}
+
+.contacto h5{
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 25px;
+	color: white;
+	background-color: #115506;
+	height: 40px;
+	margin-top: 0px;
+	
+}
+.contacto form{
+	text-align: center;
+}
+
+.contacto input, .contacto textarea{
+	display: block;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 20px;
+	width: 98%;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+.carousel-wrapper{
+	position: relative;
+	height: 550px;
+	width: 50%;
+	margin-top: -200px;
+	padding-top: 20px;
+	top: 40px;
+}
+
+.carousel-wrapper .carousel-item{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: all 0.5s ease-in-out;
+	
+}
+
+.carousel-wrapper .carousel-item .arrow{
+	position: absolute;
+	top: 50%;
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: url("../images/arrow left.png") 50% 50%/40px no-repeat;
+}
+
+.carousel-wrapper .carousel-item .arrow .arrow-prev{
+	left: 0;
+}
+.carousel-wrapper .carousel-item .arrow.arrow-next{
+	right: 0;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.carousel-wrapper [id^="target-item"]{
+	display: none;
+}
+
+.carousel-wrapper .item-1{
+	opacity: 1;
+	z-index: 2;
+}
+
+.carousel-wrapper *:target ~ .item-1{
+	opacity: 0;
+}
+
+.carousel-wrapper #target-item-1:target ~ .item-1{
+	opacity: 1;
+}
+
+.carousel-wrapper #target-item-2:target ~ .item-2,
+.carousel-wrapper #target-item-3:target ~ .item-3,
+.carousel-wrapper #target-item-4:target ~ .item-4{
+	z-index: 3;
+	opacity: 1;
+}
+
+.carousel-wrapper img{
+	width: 100%;
+	height: 100%;
+}
+
+.detalles{
+	float: right;
+	width: 41%;
+	margin-right: 40px;
+}
+.detalles h5{
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 25px;
+	color: white;
+	background-color: #115506;
+	height: 40px;
+	margin-top: -480px;
+}
+
+.detalles li{
+	text-align: left;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 20px;
+	width: 98%;
+	margin-bottom: 20px;
+	margin-left: 40px; 
+	
+}
+
+.iconos{
+	float: right;
+	margin-right: 10px;
+	margin-top: -350px;
+	
+}
+
+.iconos #images li {
+	display: inline-block;
+	text-decoration: none;
+	margin-bottom: 8px;
+	margin-right: -65px;
+}
+
+.aspectos{
+	margin-top: 60px;
+	background-color: #115506;
+	height: 250px;
+}
+
+.aspectos h2{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: white;
+	
+}
+
+.aspectos #tecnologia{
+	margin-left: 40px;
+	padding-top: 30px;
+	height: 0;
+
+} 
+
+.aspectos #tecnologia h2{
+	width: 0;
+	margin-left: 30px;
+}
+
+.aspectos #tecnologia li{
+	text-align: left;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 18px;
+	color: white;
+	margin-bottom: 10px;
+}
+
+.aspectos #moviliario{
+	text-align: center;
+	padding-top: 0px;
+}
+.aspectos #moviliario h2{
+	width: 0;
+	margin-left: 550px;
+}
+.aspectos #moviliario li{
+	text-align: left;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: white;
+	margin-bottom: 10px;
+	margin-left: 390px;
+}
+
+.aspectos #movi{
+	height: 0;
+}
+.aspectos #movi li{
+	text-align: left;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: white;
+	margin-bottom: 10px;
+	margin-left: 620px;
+	
+	
+}
+
+.aspectos #ducha{
+	text-align: right;
+	padding-top: 0;
+}
+
+.aspectos #ducha h2{
+	width: 0;
+	margin-left: 1120px;
+	margin-top: -40px;
+}
+
+.aspectos #ducha li{
+	text-align: left;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: white;
+	margin-bottom: 10px;
+	margin-left: 1050px;
+}
+/*footer*/
+footer{
+	margin-top: 30px;
+	background-color:black;
+	color: white;
+	height: 250px;
+}
+
+Footer h5 {
+	font-size: 18px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	padding-left: 40px;
+	position: relative;
+	top: 200px;
+	height: 0;
+}
+
+footer h4{
+	font-size: 20px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-align: center;
+}
+
+footer #facebook{
+	position: relative;
+	margin-left: 550px;
+	height: 0;
+}
+
+footer #insta{
+	position: relative;
+	display: block;
+	margin-left: 660px;
+	top: -14px;
+	height: 0;
+	
+}
+
+footer #twitter{
+	position: relative;
+	margin-left: 770px;
+	top: -22px;
+	height: 0;
+}
+
+footer h6{
+	position: relative;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 18px;
+	top: 15px;
+	height: 0;
+}
+footer h3{
+	font-size: 18px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	padding-left: 1060px;
+	position: relative;
+	top: -5px;
+	height: 0;
+	 
+}
